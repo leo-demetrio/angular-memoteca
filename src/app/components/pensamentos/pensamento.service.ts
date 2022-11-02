@@ -19,7 +19,6 @@ export class PensamentoService {
       .set("_limit", itens)
     
     return this.http.get<Pensamento[]>(this.API, { params });
-    //return this.http.get<Pensamento[]>(`${this.API}?_page=${pagina}&_limit=${itens}`);
   }
 
   criar(pensamento: Pensamento): Observable<Pensamento> {
